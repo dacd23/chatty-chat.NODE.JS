@@ -33,7 +33,7 @@
         //send message to front end
         $("#send").click(() =>{
             var message = { name: $("#name").val(), message: $("#message").val()}
-            postMessage(message)
+            addMessage(message)
         })
         //send message to back end
         getMessage()
@@ -58,13 +58,6 @@
         $.get('https://dacd23.github.io/chatty-chat.NODE.JS/', () =>{
             addMessage(message)
             console.log('message added')
-        })
-    }
-//post messages
-    function postMessage(message) {
-        $.post('https://dacd23.github.io/chatty-chat.NODE.JS/', message, () =>{
-            addMessage(message)
-            console.log('message added, yes')
         })
     }
 

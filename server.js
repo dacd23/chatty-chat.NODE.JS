@@ -6,10 +6,7 @@ app.use(express.static('https://dacd23.github.io/chatty-chat.NODE.JS/'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
-var messages = [
-    {name: 'tim', message: 'hi'},  
-    {name: 'timdd', message: 'hheiei'}
-]
+//var messages = []
 
 app.get('https://dacd23.github.io/chatty-chat.NODE.JS/', (req, res) => {
     res.send(messages)
