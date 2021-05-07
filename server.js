@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express()
 
-app.use(express.static(__dirname))
+app.use(express.static('https://dacd23.github.io/chatty-chat.NODE.JS/'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
