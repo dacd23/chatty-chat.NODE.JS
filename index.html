@@ -40,7 +40,6 @@
         //delte function in front end
         $("#delete").click(() => {
             deleteMessage()
-            disposeMessage(message)
         })
 
 
@@ -63,8 +62,8 @@
     }
 //post messages
     function postMessage(message) {
-        $.post('https://dacd23.github.io/chatty-chat.NODE.JS/', message, (data) =>{
-            data.forEach(addMessage)
+        $.post('https://dacd23.github.io/chatty-chat.NODE.JS/', message, () =>{
+            addMessage(message)
             console.log('message added, yes')
         })
     }
