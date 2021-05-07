@@ -56,8 +56,8 @@
     }
 //get messages 
     function getMessage() {
-        $.get('https://dacd23.github.io/chatty-chat.NODE.JS/', (data) =>{
-            data.forEach(addMessage)
+        $.get('https://dacd23.github.io/chatty-chat.NODE.JS/', () =>{
+            addMessage(message)
             console.log('message added')
         })
     }
