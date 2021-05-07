@@ -21,7 +21,7 @@ app.post('https://dacd23.github.io/chatty-chat.NODE.JS/', (req, res) => {
     console.log('message posted')
 })
 
-var server = app.listen(3000, () => {
+var server = app.listen('https://dacd23.github.io/chatty-chat.NODE.JS/', () => {
     console.log('server is listening on port', server.address().port)
 })
 
