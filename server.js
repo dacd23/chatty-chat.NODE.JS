@@ -11,12 +11,12 @@ var messages = [
     {name: 'timdd', message: 'hheiei'}
 ]
 
-app.get('/messages', (req, res) => {
+app.get('https://dacd23.github.io/chatty-chat.NODE.JS/', (req, res) => {
     res.send(messages)
     console.log('sent message')
 })
 //post message
-app.post('/messages', (req, res) => {
+app.post('https://dacd23.github.io/chatty-chat.NODE.JS/', (req, res) => {
     messages.push(req.body)
     console.log('message posted')
 })
